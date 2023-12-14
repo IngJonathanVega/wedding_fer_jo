@@ -11,8 +11,8 @@ import { I18nProvider } from '@/i18n/I18nProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'projectname',
-  description: 'Built using Ingeno Foundation',
+  title: 'Fer & Jo Wedding ',
+  description: 'Wedding for Fernanda & Jonathan'
 }
 
 const LocaleRootLayout: FC<PropsWithChildren<PageProps>> = async ({ children, params }) => {
@@ -22,6 +22,7 @@ const LocaleRootLayout: FC<PropsWithChildren<PageProps>> = async ({ children, pa
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <body className={inter.className}>
         <I18nProvider locale={params.locale} namespaces={['home']}>
