@@ -8,12 +8,8 @@ import initTranslations from '@/i18n/i18n'
 import { PageProps } from '@/types'
 import { FC } from 'react'
 
-export const Home: FC<PageProps> = async ({ params: { locale } }) => {
+const Page: FC<PageProps> = async ({ params: { locale } }) => {
   const { t } = await initTranslations(locale, ['home'])
-
-  const targetDate = new Date('2024-04-13T00:00:00')
-  const now = new Date()
-  const days = Math.floor((targetDate - now) / (1000 * 60 * 60 * 24))
 
   return (
     <div className="text-white font-courgette">
@@ -24,9 +20,6 @@ export const Home: FC<PageProps> = async ({ params: { locale } }) => {
         <div className="text-center h-full lg:hover:scale-150 ">
           <p className=" text-7xl mt-4">{t('home.title')}</p>
           <p className="text-3xl mt-2 ">{t('home.date')}</p>
-          <span className="font-bold text-4xl t-20">
-            {days} {t('home.day')}
-          </span>
         </div>
       </section>
 
@@ -64,4 +57,4 @@ export const Home: FC<PageProps> = async ({ params: { locale } }) => {
   )
 }
 
-export default Home
+export default Page
