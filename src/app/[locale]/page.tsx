@@ -13,7 +13,7 @@ const Page: FC<PageProps> = async ({ params: { locale } }) => {
 
   return (
     <div className='text-white font-courgette'>
-      <section className='min-h-screen flex flex-row justify-center items-center bg-main bg-cover bg-center bg-fixed bg-opacity-70' id='responsive-home'>
+      <section className='min-h-[calc(100dvh)] flex flex-row justify-center items-center bg-main bg-cover bg-center bg-fixed bg-opacity-70' id='responsive-home'>
         <div className='text-center h-full lg:hover:scale-150 '>
           <p className=' text-7xl mt-4'>{t('home.title')}</p>
           <p className='text-3xl mt-2 '>{t('home.date')}</p>
