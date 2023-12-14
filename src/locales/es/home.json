@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "INICIO",
+    "out_story": "NUESTRA HISTORIA",
+    "the_girls": "LAS CHICHAS",
+    "the_boys": "LOS CHICOS",
+    "the_day": "EL DIA",
+    "faqs": "FAQs"
+  },
+  "home": {
+    "title": "Nos casamos !",
+    "date": "14 Abril 2024",
+    "day": "días"
+  },
+  "our_story": {
+    "title": "Nuestra Historia",
+    "dates": {
+      "1": {
+        "date": "1/1/2011",
+        "title": "Primer Cita",
+        "text": "Esta cita fue con toda la familia en piscilago"
+      },
+      "2": {
+        "date": "2/2/2",
+        "title": "Segunda Cita",
+        "text": "Esta cita fue con toda la familia en piscilago"
+      },
+      "3": {
+        "date": "2/2/2",
+        "title": "Segunda Cita",
+        "text": "Esta cita fue con toda la familia en piscilago"
+      },
+      "4": {
+        "date": "2/2/2",
+        "title": "Segunda Cita",
+        "text": "Esta cita fue con toda la familia en piscilago"
+      },
+      "5": {
+        "date": "2/2/2",
+        "title": "Segunda Cita",
+        "text": "Esta cita fue con toda la familia en piscilago"
+      },
+      "6": {
+        "date": "2/2/2",
+        "title": "Segunda Cita",
+        "text": "Esta cita fue con toda la familia en piscilago"
+      }
+    }
+  },
+  "the_girls": {
+    "title": "Las Chicas",
+    "first": {
+      "name": "Sharon",
+      "text1": "Dama de honor",
+      "text2": "Mejor amiga de la novia"
+    },
+    "second": {
+      "name": "Lorena",
+      "text1": "Dama de honor",
+      "text2": "Hermana"
+    },
+    "third": {
+      "name": "Anyela",
+      "text1": "Dama de honor",
+      "text2": "Hermana"
+    },
+    "quarter": {
+      "name": "Yenny",
+      "text1": "Dama de honor",
+      "text2": "Hermana"
+    }
+  },
+  "the_boys": {
+    "title": "Los Chicos",
+    "first": {
+      "name": "Juan",
+      "text1": "Padrino de boda",
+      "text2": "Groom's Best Friend"
+    },
+    "second": {
+      "name": "Carlos",
+      "text1": "Padrino",
+      "text2": "Amigo"
+    },
+    "third": {
+      "name": "Rick",
+      "text1": "Padrino",
+      "text2": "Cuñado"
+    },
+    "quarter": {
+      "name": "Alejandro",
+      "text1": "Padrino",
+      "text2": "Cuñado"
+    },
+    "fifth": {
+      "name": "Camilo",
+      "text1": "Padrino",
+      "text2": "Cuñado"
+    }
+  },
+  "the_day": {
+    "title": "El día de la boda",
+    "sub_title": "Todos los eventos se llevarán a cabo en el Barceló Hotel Resort.",
+    "hotel_name": "",
+    "location": "MX, Playa del Carmen ",
+    "ceremony": {
+      "title": "Ceremonia",
+      "date": "16:00",
+      "text": "Boda en la playa",
+      "description": "vestiario"
+    },
+    "reception": {
+      "title": "Recepción",
+      "date": "19:00",
+      "text": "",
+      "description": ""
+    },
+    "dinner": {
+      "title": "Cena y baile",
+      "date": "21:00",
+      "text": "",
+      "description": ""
+    }
+  },
+  "faqs": {
+    "title": "Preguntas frecuentes",
+    "1": {
+      "question": "pregunta 1",
+      "answer": "respuesta 1"
+    },
+    "2": {
+      "question": "",
+      "answer": ""
+    },
+    "3": {
+      "question": "",
+      "answer": ""
+    },
+    "4": {
+      "question": "",
+      "answer": ""
+    },
+    "5": {
+      "question": "",
+      "answer": ""
+    },
+    "6": {
+      "question": "",
+      "answer": ""
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "home": "HOME",
+    "out_story": "OUR STORY",
+    "the_girls": "THE GIRLS",
+    "the_boys": "THE BOYS",
+    "the_day": "THE WEDDING DAY",
+    "faqs": "FAQs"
+  },
+  "home": {
+    "title": "We're Getting Married!",
+    "date": "April 14, 2024",
+    "day": "days"
+  },
+  "our_story": {
+    "title": "Our Story",
+    "dates": {
+      "1": {
+        "date": "1/1/2011",
+        "title": "First Date",
+        "text": "out fist date was in piscilago with all her family"
+      },
+      "2": {
+        "date": "",
+        "title": "",
+        "text": ""
+      },
+      "3": {
+        "date": "",
+        "title": "",
+        "text": ""
+      },
+      "4": {
+        "date": "",
+        "title": "",
+        "text": ""
+      },
+      "5": {
+        "date": "",
+        "title": "",
+        "text": ""
+      },
+      "6": {
+        "date": "",
+        "title": "",
+        "text": ""
+      }
+    }
+  },
+  "the_girls": {
+    "title": "The Girls",
+    "first": {
+      "name": "Sharon",
+      "text1": "Bridesmaid",
+      "text2": "Bride's Best Friend"
+    },
+    "second": {
+      "name": "Lorena",
+      "text1": "Bridesmaid",
+      "text2": "Sister"
+    },
+    "third": {
+      "name": "Anyela",
+      "text1": "Bridesmaid",
+      "text2": "Sister"
+    },
+    "quarter": {
+      "name": "Yenny",
+      "text1": "Bridesmaid",
+      "text2": "Sister"
+    }
+  },
+  "the_boys": {
+    "title": "The Boys",
+    "first": {
+      "name": "Juan",
+      "text1": "Groomsman",
+      "text2": "Groom's Best Friend"
+    },
+    "second": {
+      "name": "Carlos",
+      "text1": "Groomsman",
+      "text2": "Friend"
+    },
+    "third": {
+      "name": "Rick",
+      "text1": "Groomsman",
+      "text2": "brother in law"
+    },
+    "quarter": {
+      "name": "Alejandro",
+      "text1": "Groomsman",
+      "text2": "brother in law"
+    },
+    "fifth": {
+      "name": "Camilo",
+      "text1": "Groomsman",
+      "text2": "brother in law"
+    }
+  },
+  "the_day": {
+    "title": "The Wedding Day",
+    "sub_title": "All events will take place at the Barcelo Hotel Resort",
+    "hotel_name": "",
+    "location": "MX, Playa del Carmen ",
+    "ceremony": {
+      "title": "Ceremony",
+      "date": "16:00",
+      "text": "",
+      "description": ""
+    },
+    "reception": {
+      "title": "Reception",
+      "date": "19:00",
+      "text": "",
+      "description": ""
+    },
+    "dinner": {
+      "title": "Dinner & Dancing",
+      "date": "21:00",
+      "text": "",
+      "description": ""
+    }
+  },
+  "faqs": {
+    "title": "Frequently asked questions",
+    "1": {
+      "question": "question 1 ",
+      "answer": "answer 1"
+    },
+    "2": {
+      "question": "",
+      "answer": ""
+    },
+    "3": {
+      "question": "",
+      "answer": ""
+    },
+    "4": {
+      "question": "",
+      "answer": ""
+    },
+    "5": {
+      "question": "",
+      "answer": ""
+    },
+    "6": {
+      "question": "",
+      "answer": ""
+    },
+    "7": {
+      "question": "",
+      "answer": ""
+    }
+  }
+}
