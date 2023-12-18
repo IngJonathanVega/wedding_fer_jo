@@ -1,5 +1,3 @@
-import { BoysSection } from '@/components/BoysSection';
-import { GirlsSection } from '@/components/GirlsSection';
 import { FAQS } from '@/components/faqs';
 import { PhotoSection } from '@/components/photoSection';
 import { ScheduleDay } from '@/components/schedule';
@@ -27,7 +25,7 @@ const Page: FC<PageProps> = async ({ params: { locale } }) => {
         <PhotoSection />
       </section>
 
-      <section className='p-4 md:p-20 bg-rose bg-opacity-40 min-h-screen' id='responsive-the-girls'>
+      {/* <section className='p-4 md:p-20 bg-rose bg-opacity-40 min-h-screen' id='responsive-the-girls'>
         <h2 className='text-8xl mt-20  text-blue mb-10 text-center '>{t('the_girls.title')}</h2>
         <GirlsSection locale={locale} />
       </section>
@@ -35,7 +33,7 @@ const Page: FC<PageProps> = async ({ params: { locale } }) => {
       <section className='p-4 md:p-20 bg-blue min-h-screen' id='responsive-the-boys'>
         <h2 className='text-8xl mt-20  text-white mb-10 text-center '>{t('the_boys.title')}</h2>
         <BoysSection locale={locale} />
-      </section>
+      </section> */}
 
       <section className='p-4 md:p-20 text-blue bg-rose bg-opacity-40 min-h-screen space-y-20' id='responsive-the-day'>
         <h2 className='text-8xl mt-20 mb-20 text-center'>{t('the_day.title')}</h2>
