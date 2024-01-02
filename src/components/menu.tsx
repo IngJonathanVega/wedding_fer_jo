@@ -42,12 +42,6 @@ export const Menu = ({ locale }: { locale: string }) => {
         <a href='#responsive-our-story' className='block md:inline'>
           {t('nav.out_story')}
         </a>
-        {/* <a href='#responsive-the-girls' className='block md:inline'>
-          {t('nav.the_girls')}
-        </a>
-        <a href='#responsive-the-boys' className='block md:inline'>
-          {t('nav.the_boys')}
-        </a> */}
         <a href='#responsive-the-day' className='block md:inline'>
           {t('nav.the_day')}
         </a>

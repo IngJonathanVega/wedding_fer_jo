@@ -16,34 +16,34 @@
     "title": "Nuestra Historia",
     "dates": {
       "1": {
-        "date": "1/1/2011",
+        "date": "Mayo 2010",
         "title": "Primer Cita",
-        "text": "Esta cita fue con toda la familia en piscilago"
+        "text": "La primera cita fue en el centro comercial Portal 80. De ahí, nos aventuramos al parque de diversiones Mundo Aventura, donde pasamos todo el día sumergidos en la magia de la diversión y el romance. Como todo un caballero, me esmeré en brindarte una cena especial, aunque fuese un sencillo pero simbólico perro caliente. Cada uno contribuyó con su entrada al parque, manteniendo un equilibrio encantador."
       },
       "2": {
-        "date": "2/2/2",
-        "title": "Segunda Cita",
-        "text": "Esta cita fue con toda la familia en piscilago"
+        "date": "Agosto 2010",
+        "title": "Primer paseo en familia",
+        "text": "El primer paseo fue un tanto intimidante, ya que fue con toda la familia de Fernanda en el parque acuático Piscilago. Pasamos todo el día inmersos en risas y momentos especiales. A pesar de los nervios iniciales y los miedos que pudieron surgir, la familia no solo nos aceptó sino que también aprobó nuestra relación. Fue un día mágico en el que construimos no solo recuerdos alegres en el parque, sino también la base sólida de un amor que resistió la prueba de la aprobación familiar."
       },
       "3": {
-        "date": "2/2/2",
-        "title": "Segunda Cita",
-        "text": "Esta cita fue con toda la familia en piscilago"
+        "date": "2013 - 2014",
+        "title": "Logros Profesionales",
+        "text": "En 2013, fue un momento sumamente especial para Fernanda, ya que logró obtener su título profesional como administradora de empresas. Un año más tarde, en 2014, llegó mi turno y fue el momento de obtener mi título como ingeniero de sistemas. Fue un período en el que celebramos juntos los logros académicos y nos apoyamos mutuamente en nuestras respectivas carreras. Estos hitos no solo representaron el esfuerzo individual, sino también el inicio de una etapa donde nuestros caminos profesionales se entrelazaron con nuestra historia compartida."
       },
       "4": {
-        "date": "2/2/2",
-        "title": "Segunda Cita",
-        "text": "Esta cita fue con toda la familia en piscilago"
+        "date": "2019",
+        "title": "Comenzando en un nuevo pais",
+        "text": "Llegaba la hora de comenzar una nueva vida en otro país. En este año, recibimos una oferta de trabajo que nos brindaba la oportunidad de emigrar a Canadá. El inicio desde cero no fue fácil; enfrentamos momentos desafiantes y superamos obstáculos. Sin embargo, con el amor y el apoyo constante que nos brindamos mutuamente, logramos salir adelante. A pesar de las dificultades iniciales, esta experiencia fortaleció nuestra unión. Juntos, construimos un nuevo capítulo en nuestras vidas, adaptándonos a un entorno completamente diferente"
       },
       "5": {
         "date": "2/2/2",
-        "title": "Segunda Cita",
-        "text": "Esta cita fue con toda la familia en piscilago"
+        "title": "Pedida de mano",
+        "text": "Después de 9 años de estar juntos, llegó el momento de formalizar nuestro amor. Este hermoso paso lo dimos comprometiéndonos frente al símbolo de amor más grande que existe: la Torre Eiffel en París. Fue un momento mágico y emotivo, rodeados por la belleza de la Ciudad de la Luz. Bajo el resplandor de la Torre Eiffel, con sus luces centelleantes como testigos, sellamos nuestro compromiso de amor eterno. Este lugar tan icónico se convirtió en el escenario perfecto para celebrar la historia que hemos construido juntos durante todos estos años. Así, con la Torre Eiffel como testigo, dimos un paso más hacia el futuro, lleno de promesas y sueños compartidos."
       },
       "6": {
         "date": "2/2/2",
-        "title": "Segunda Cita",
-        "text": "Esta cita fue con toda la familia en piscilago"
+        "title": "Se agrando la familia",
+        "text": "Como toda familia llena de amor, llegaba el momento de hacerla crecer. Es aquí donde nuestra hermosa Sammy se une a nuestro mundo, una preciosa Border Collie. Con patas llenas de energía y ojos llenos de curiosidad, Sammy se convirtió en la alegría que faltaba en nuestro hogar. Su pelaje suave y su lealtad incondicional se integraron perfectamente en nuestra vida cotidiana. Cada día, su presencia llena de vitalidad y amor nos recordó la belleza de tener una compañera de cuatro patas en nuestra familia. Con Sammy, nuestro hogar se volvió aún más cálido y acogedor, marcando el comienzo de una nueva etapa llena de travesuras y momentos entrañables."
       }
     }
   },
@@ -103,23 +103,29 @@
     "sub_title": "Todos los eventos se llevarán a cabo en el Barceló Hotel Resort.",
     "hotel_name": "",
     "location": "MX, Playa del Carmen ",
+    "dinner": {
+      "title": "Presentación",
+      "date": "18:00",
+      "text": "Restaurante a confirmar",
+      "description": "Esta cena se llevará a cabo en el restaurante del hotel con el propósito de presentar a todos los invitados. Se establece como código de vestimenta la utilización de camisa y pantalón blanco para los hombres, y vestido blanco para las mujeres."
+    },
     "ceremony": {
       "title": "Ceremonia",
-      "date": "16:00",
-      "text": "Boda en la playa",
-      "description": "vestiario"
+      "date": "14:45",
+      "text": "Capilla Catolica",
+      "description": "La ceremonia se llevará a cabo en la capilla del hotel y está programada para concluir a las 4 p. m. Después se invitará a los asistentes a disfrutar de un brindis en las áreas exteriores de la capilla. Posteriormente, se llevará a cabo una sesión de fotos para inmortalizar estos instantes tan especiales.\n\nCódigo de Vestimenta:\n\nHombres: Colores pasteles (excepto oro rosa, beige ni blanco) y pantalón. No se permiten bermudas, shorts ni jeans.\n\nMujeres: Vestido largo en colores pasteles (excepto oro rosa, beige ni blanco)."
     },
     "reception": {
       "title": "Recepción",
       "date": "19:00",
-      "text": "",
-      "description": ""
+      "text": "Playa a confirmar",
+      "description": "La recepción, que seguirá a la ceremonia en la capilla del hotel, se llevará a cabo en la playa, brindando un escenario natural y relajado para celebrar este evento tan especial. "
     },
-    "dinner": {
+    "party": {
       "title": "Cena y baile",
-      "date": "21:00",
+      "date": "20:00",
       "text": "",
-      "description": ""
+      "description": "La cena en la playa será una experiencia culinaria sublime, disfrutarán de platillos exquisitos preparados con ingredientes frescos. Tras la cena, la fiesta comienza, donde la música vibrante animará la pista de baile"
     }
   },
   "faqs": {

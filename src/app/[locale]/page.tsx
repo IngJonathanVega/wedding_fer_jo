@@ -25,23 +25,9 @@ const Page: FC<PageProps> = async ({ params: { locale } }) => {
         <PhotoSection />
       </section>
 
-      {/* <section className='p-4 md:p-20 bg-rose bg-opacity-40 min-h-screen' id='responsive-the-girls'>
-        <h2 className='text-8xl mt-20  text-blue mb-10 text-center '>{t('the_girls.title')}</h2>
-        <GirlsSection locale={locale} />
-      </section>
-
-      <section className='p-4 md:p-20 bg-blue min-h-screen' id='responsive-the-boys'>
-        <h2 className='text-8xl mt-20  text-white mb-10 text-center '>{t('the_boys.title')}</h2>
-        <BoysSection locale={locale} />
-      </section> */}
-
       <section className='p-4 md:p-20 text-blue bg-rose bg-opacity-40 min-h-screen space-y-20' id='responsive-the-day'>
         <h2 className='text-8xl mt-20 mb-20 text-center'>{t('the_day.title')}</h2>
         <ScheduleDay locale={locale} />
-      </section>
-
-      <section className='p-4 md:p-20 text-white bg-blue min-h-screen space-y-20' id='responsive-faqs'>
-        <FAQS locale={locale} />
       </section>
     </div>
   );

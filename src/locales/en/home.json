@@ -16,34 +16,34 @@
     "title": "Our Story",
     "dates": {
       "1": {
-        "date": "1/1/2011",
+        "date": "May 2010",
         "title": "First Date",
-        "text": "out fist date was in piscilago with all her family"
+        "text": "The first date was at Portal 80 shopping center. From there, we ventured to Mundo Aventura amusement park, where we spent the entire day immersed in the magic of fun and romance. Like a true gentleman, I made an effort to provide you with a special dinner, even if it was a simple but symbolic hot dog. Each of us contributed to our park entries, maintaining a charming balance."
       },
       "2": {
-        "date": "",
-        "title": "",
-        "text": ""
+        "date": "August 2010",
+        "title": "First Family Outing",
+        "text": "The first outing was a bit intimidating, as it was with Fernanda's entire family at Piscilago water park. We spent the day immersed in laughter and special moments. Despite initial nerves and fears that may have arisen, the family not only accepted us but also approved of our relationship. It was a magical day where we built not only joyful memories in the park but also the solid foundation of a love that stood the test of family approval."
       },
       "3": {
-        "date": "",
-        "title": "",
-        "text": ""
+        "date": "2013 - 2014",
+        "title": "Professional Achievements",
+        "text": "In 2013, it was an incredibly special moment for Fernanda, as she obtained her professional degree in business administration. A year later, in 2014, it was my turn to obtain my degree as a systems engineer. It was a period in which we celebrated academic achievements together and supported each other in our respective careers. These milestones represented not only individual effort but also the beginning of a stage where our professional paths intertwined with our shared history."
       },
       "4": {
-        "date": "",
-        "title": "",
-        "text": ""
+        "date": "2019",
+        "title": "Starting a New Life in a New Country",
+        "text": "The time had come to start a new life in another country. In this year, we received a job offer that provided the opportunity to migrate to Canada. Starting from scratch wasn't easy; we faced challenging moments and overcame obstacles. However, with the constant love and support we gave each other, we managed to move forward. Despite the initial difficulties, this experience strengthened our bond. Together, we built a new chapter in our lives, adapting to a completely different environment."
       },
       "5": {
-        "date": "",
-        "title": "",
-        "text": ""
+        "date": "2/2/2",
+        "title": "Proposal",
+        "text": "After 9 years of being together, the time had come to formalize our love. We took this beautiful step by getting engaged in front of the greatest symbol of love: the Eiffel Tower in Paris. It was a magical and emotional moment, surrounded by the beauty of the City of Light. Under the glow of the Eiffel Tower, with its twinkling lights as witnesses, we sealed our commitment to eternal love. This iconic location became the perfect setting to celebrate the story we had built together over all these years. Thus, with the Eiffel Tower as a witness, we took another step into the future, full of promises and shared dreams."
       },
       "6": {
-        "date": "",
-        "title": "",
-        "text": ""
+        "date": "2/2/2",
+        "title": "Family Expansion",
+        "text": "Like every family filled with love, the time had come to make it grow. This is where our beautiful Sammy joins our world, a precious Border Collie. With legs full of energy and eyes full of curiosity, Sammy became the joy that was missing in our home. Her soft fur and unconditional loyalty seamlessly integrated into our daily lives. Each day, her presence filled with vitality and love reminded us of the beauty of having a four-legged companion in our family. With Sammy, our home became even warmer and more welcoming, marking the beginning of a new stage filled with antics and cherished moments."
       }
     }
   },
@@ -98,28 +98,35 @@
       "text2": "brother in law"
     }
   },
+
   "the_day": {
-    "title": "The Wedding Day",
-    "sub_title": "All events will take place at the Barcelo Hotel Resort",
+    "title": "Wedding Day",
+    "sub_title": "All events will take place at the Barceló Hotel Resort.",
     "hotel_name": "",
-    "location": "MX, Playa del Carmen ",
+    "location": "MX, Playa del Carmen",
+    "dinner": {
+      "title": "Presentation",
+      "date": "18:00",
+      "text": "Restaurant to be confirmed",
+      "description": "This dinner will take place at the hotel restaurant with the purpose of introducing all the guests. The dress code is a white shirt and trousers for men, and a white dress for women."
+    },
     "ceremony": {
       "title": "Ceremony",
-      "date": "16:00",
-      "text": "",
-      "description": ""
+      "date": "14:45",
+      "text": "Catholic Chapel",
+      "description": "The ceremony will take place in the hotel chapel and is scheduled to conclude at 4 p.m. Attendees will be invited to enjoy a toast in the outdoor areas of the chapel. Subsequently, a photo session will capture these special moments.\n\nDress Code:\n\nMen: Pastel colors (except rose gold, beige, or white) and trousers. No Bermuda shorts, shorts, or jeans.\n\nWomen: Long dress in pastel colors (except rose gold, beige, or white)."
     },
     "reception": {
       "title": "Reception",
       "date": "19:00",
-      "text": "",
-      "description": ""
+      "text": "Beach to be confirmed",
+      "description": "The reception, following the chapel ceremony, will take place on the beach, providing a natural and relaxed setting to celebrate this special event."
     },
-    "dinner": {
-      "title": "Dinner & Dancing",
-      "date": "21:00",
+    "party": {
+      "title": "Dinner and Dance",
+      "date": "20:00",
       "text": "",
-      "description": ""
+      "description": "The beach dinner will be a sublime culinary experience, with guests enjoying exquisite dishes prepared with fresh ingredients. Following dinner, the party begins, where vibrant music will animate the dance floor."
     }
   },
   "faqs": {
