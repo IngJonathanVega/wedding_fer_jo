@@ -15,33 +15,18 @@ const Section = ({ title, day, subtitle, description, img }: { title: string; da
   </div>
 );
 
-export const ScheduleDay = async ({ locale }: { locale: string }) => {
+export const ScheduleDayBefore = async ({ locale }: { locale: string }) => {
   const { t } = await initTranslations(locale, ['home']);
   return (
     <div className='text-center'>
-      <h1 className='text-5xl text-black'>{t('the_day.sub_title')}</h1>
-      <p className='text-xl mt-2 text-black'>{t('the_day.location')}</p>
+      <h1 className='text-5xl text-black'>{t('the_day_before.sub_title')}</h1>
+      <p className='text-xl mt-2 text-black'>{t('the_day_before.location')}</p>
       <div className=''>
         <Section
-          title={t('the_day.ceremony.title')}
-          day={t('the_day.ceremony.date')}
-          subtitle={t('the_day.ceremony.text')}
-          description={t('the_day.ceremony.description')}
-          img='/img/paleta.jpg'
-        />
-
-        <Section
-          title={t('the_day.reception.title')}
-          day={t('the_day.reception.date')}
-          subtitle={t('the_day.reception.text')}
-          description={t('the_day.reception.description')}
-        />
-
-        <Section
-          title={t('the_day.party.title')}
-          day={t('the_day.party.date')}
-          subtitle={t('the_day.party.text')}
-          description={t('the_day.party.description')}
+          title={t('the_day_before.dinner.title')}
+          day={t('the_day_before.dinner.date')}
+          subtitle={t('the_day_before.dinner.text')}
+          description={t('the_day_before.dinner.description')}
         />
       </div>
     </div>

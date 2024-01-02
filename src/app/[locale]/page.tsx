@@ -1,6 +1,7 @@
 import { FAQS } from '@/components/faqs';
 import { PhotoSection } from '@/components/photoSection';
 import { ScheduleDay } from '@/components/schedule';
+import { ScheduleDayBefore } from '@/components/schedule_before';
 import { VerticalTimeLine } from '@/components/timeline/verticalTimeLine';
 import initTranslations from '@/i18n/i18n';
 import { PageProps } from '@/types';
@@ -26,6 +27,11 @@ const Page: FC<PageProps> = async ({ params: { locale } }) => {
       </section>
 
       <section className='p-4 md:p-20 text-blue bg-rose bg-opacity-40 min-h-screen space-y-20' id='responsive-the-day'>
+        <h2 className='text-8xl mt-20 mb-20 text-center'>{t('the_day_before.title')}</h2>
+        <ScheduleDayBefore locale={locale} />
+      </section>
+
+      <section className='p-4 text-blue bg-rose bg-opacity-40 min-h-screen space-y-20' id='responsive-the-day'>
         <h2 className='text-8xl mt-20 mb-20 text-center'>{t('the_day.title')}</h2>
         <ScheduleDay locale={locale} />
       </section>

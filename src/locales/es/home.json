@@ -31,19 +31,19 @@
         "text": "En 2013, fue un momento sumamente especial para Fernanda, ya que logró obtener su título profesional como administradora de empresas. Un año más tarde, en 2014, llegó mi turno y fue el momento de obtener mi título como ingeniero de sistemas. Fue un período en el que celebramos juntos los logros académicos y nos apoyamos mutuamente en nuestras respectivas carreras. Estos hitos no solo representaron el esfuerzo individual, sino también el inicio de una etapa donde nuestros caminos profesionales se entrelazaron con nuestra historia compartida."
       },
       "4": {
-        "date": "2019",
+        "date": "2018",
         "title": "Comenzando en un nuevo pais",
         "text": "Llegaba la hora de comenzar una nueva vida en otro país. En este año, recibimos una oferta de trabajo que nos brindaba la oportunidad de emigrar a Canadá. El inicio desde cero no fue fácil; enfrentamos momentos desafiantes y superamos obstáculos. Sin embargo, con el amor y el apoyo constante que nos brindamos mutuamente, logramos salir adelante. A pesar de las dificultades iniciales, esta experiencia fortaleció nuestra unión. Juntos, construimos un nuevo capítulo en nuestras vidas, adaptándonos a un entorno completamente diferente"
       },
       "5": {
-        "date": "2/2/2",
+        "date": "16 septiembre 2019",
         "title": "Pedida de mano",
         "text": "Después de 9 años de estar juntos, llegó el momento de formalizar nuestro amor. Este hermoso paso lo dimos comprometiéndonos frente al símbolo de amor más grande que existe: la Torre Eiffel en París. Fue un momento mágico y emotivo, rodeados por la belleza de la Ciudad de la Luz. Bajo el resplandor de la Torre Eiffel, con sus luces centelleantes como testigos, sellamos nuestro compromiso de amor eterno. Este lugar tan icónico se convirtió en el escenario perfecto para celebrar la historia que hemos construido juntos durante todos estos años. Así, con la Torre Eiffel como testigo, dimos un paso más hacia el futuro, lleno de promesas y sueños compartidos."
       },
       "6": {
-        "date": "2/2/2",
+        "date": "septiembre 2021",
         "title": "Se agrando la familia",
-        "text": "Como toda familia llena de amor, llegaba el momento de hacerla crecer. Es aquí donde nuestra hermosa Sammy se une a nuestro mundo, una preciosa Border Collie. Con patas llenas de energía y ojos llenos de curiosidad, Sammy se convirtió en la alegría que faltaba en nuestro hogar. Su pelaje suave y su lealtad incondicional se integraron perfectamente en nuestra vida cotidiana. Cada día, su presencia llena de vitalidad y amor nos recordó la belleza de tener una compañera de cuatro patas en nuestra familia. Con Sammy, nuestro hogar se volvió aún más cálido y acogedor, marcando el comienzo de una nueva etapa llena de travesuras y momentos entrañables."
+        "text": "Como toda familia llena de amor, llegaba el momento de hacerla crecer. Es aquí donde nuestra hermosa Sammy se une a nuestro mundo, una preciosa Border Collie. Con patas llenas de energía y ojos llenos de curiosidad, Sammy se convirtió en la alegria de nuestro hogar. Su pelaje suave y su lealtad incondicional se integraron perfectamente en nuestra vida cotidiana. Cada día, su presencia llena de vitalidad y amor nos recordó la belleza de tener una compañera de cuatro patas en nuestra familia. Con Sammy, nuestro hogar se volvió aún más cálido y acogedor, marcando el comienzo de una nueva etapa llena de travesuras y momentos entrañables."
       }
     }
   },
@@ -96,6 +96,18 @@
       "name": "Camilo",
       "text1": "Padrino",
       "text2": "Cuñado"
+    }
+  },
+  "the_day_before": {
+    "title": "El día de antes de la boda",
+    "sub_title": "",
+    "hotel_name": "",
+    "location": "",
+    "dinner": {
+      "title": "Presentación",
+      "date": "18:00",
+      "text": "Restaurante a confirmar",
+      "description": "Esta cena se llevará a cabo en el restaurante del hotel con el propósito de presentar a todos los invitados. Se establece como código de vestimenta la utilización de camisa y pantalón blanco para los hombres, y vestido blanco para las mujeres."
     }
   },
   "the_day": {
