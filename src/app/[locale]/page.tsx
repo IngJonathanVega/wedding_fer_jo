@@ -1,4 +1,3 @@
-import { FAQS } from '@/components/faqs';
 import { PhotoSection } from '@/components/photoSection';
 import { ScheduleDay } from '@/components/schedule';
 import { ScheduleDayBefore } from '@/components/schedule_before';
@@ -19,14 +18,14 @@ const Page: FC<PageProps> = async ({ params: { locale } }) => {
         </div>
       </section>
 
-      <section className='p-4 md:p-20 bg-blue min-h-screen space-y-20' id='responsive-our-story'>
-        <h2 className='text-8xl mt-20 mb-20 text-center'>{t('our_story.title')}</h2>
+      <section className='p-4 md:p-20 bg-rose bg-opacity-40  min-h-screen space-y-20' id='responsive-our-story'>
+        <h2 className='text-8xl mt-20 mb-20 text-blue text-center'>{t('our_story.title')}</h2>
         <VerticalTimeLine locale={locale} />
 
         <PhotoSection />
       </section>
 
-      <section className='p-4 md:p-20 text-blue bg-rose bg-opacity-40 min-h-screen space-y-20' id='responsive-the-day'>
+   <section className='p-4 md:p-20 text-blue bg-rose bg-opacity-40 min-h-screen space-y-20' id='responsive-the-day'>
         <h2 className='text-8xl mt-20 mb-20 text-center'>{t('the_day_before.title')}</h2>
         <ScheduleDayBefore locale={locale} />
       </section>
