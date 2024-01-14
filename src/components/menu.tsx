@@ -45,9 +45,9 @@ export const Menu = ({ locale }: { locale: string }) => {
         <a href='#responsive-the-day' className='block md:inline'>
           {t('nav.the_day')}
         </a>
-        <a href='#responsive-faqs' className='block md:inline'>
+        {/* <a href='#responsive-faqs' className='block md:inline'>
           {t('nav.faqs')}
-        </a>
+        </a> */}
       </div>
       <div className='mt-4 md:mt-0'>
         <div className='flex font-courgette'>
