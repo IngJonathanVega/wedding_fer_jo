@@ -9,7 +9,7 @@
   },
   "home": {
     "title": "We're Getting Married!",
-    "date": "April 14, 2024",
+    "date": "April 18, 2024",
     "day": "days"
   },
   "our_story": {
@@ -98,7 +98,18 @@
       "text2": "brother in law"
     }
   },
-
+  "the_day_before": {
+    "title": "The Day Before the Wedding",
+    "sub_title": "",
+    "hotel_name": "",
+    "location": "April 17, MX, Playa del Carmen",
+    "dinner": {
+      "title": "Presentation",
+      "date": "18:00",
+      "text": "Restaurant to be confirmed",
+      "description": "This dinner will take place at the hotel's restaurant with the purpose of introducing all the guests. The dress code for this event is casual, with men encouraged to wear a white shirt and women to wear a white dress."
+    }
+  },
   "the_day": {
     "title": "Wedding Day",
     "sub_title": "All events will take place at the Barceló Hotel Resort.",
