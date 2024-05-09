@@ -1,18 +1,19 @@
 {
   "attachments": [
     {
-      "color": "${{ env.JOB_STATUS == 'success' && vars.COLOR_GREEN || env.JOB_STATUS == 'failure' && vars.COLOR_RED || vars.COLOR_ORANGE }}",
+      "color": "${{ env.PULL_REQUEST_JOB_STATUS_COLOR }}",
+      "fallback": "test",
       "blocks": [
         {
           "type": "section",
           "fields": [
             {
               "type": "mrkdwn",
-              "text": "*Pull Request:*\n<${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>"
+              "text": "*Pull Request:*\n<${{ env.PULL_REQUEST_URL }}|${{ env.PULL_REQUEST_TITLE }}>"
             },
             {
               "type": "mrkdwn",
-              "text": "*Status:*\n`${{ env.JOB_STATUS }}`"
+              "text": "*Status:*\n`${{ env.PULL_REQUEST_JOB_STATUS }}`"
             }
           ]
         },
@@ -21,11 +22,11 @@
           "fields": [
             {
               "type": "mrkdwn",
-              "text": "*Author:*\n${{ github.event.pull_request.user.login }}"
+              "text": "*Author:*\n`${{ env.PULL_REQUEST_AUTHOR }}`"
             },
             {
               "type": "mrkdwn",
-              "text": "*Event:*\n`${{ github.event_name }}`"
+              "text": "*Event:*\n`${{ env.PULL_REQUEST_EVENT_NAME }}`"
             }
           ]
         },
@@ -41,7 +42,7 @@
                 "type": "plain_text",
                 "text": "Logs"
               },
-              "url": "${{ github.event.repository.html_url }}/actions/runs/${{ github.run_id }}"
+              "url": "${{ env.PULL_REQUEST_LOGS_URL }}"
             },
             {
               "type": "button",
@@ -49,7 +50,7 @@
                 "type": "plain_text",
                 "text": "Commit"
               },
-              "url": "${{ github.event.pull_request.head.repo.html_url }}/commit/${{ github.event.pull_request.head.sha }}"
+              "url": "${{ env.PULL_REQUEST_COMMIT_URL }}"
             }
           ]
         }
