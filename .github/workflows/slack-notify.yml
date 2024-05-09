@@ -12,7 +12,7 @@ jobs:
         with:
           payload: |
             {
-            "text": "Git push done in the repo , demogithubactionyttest"
+            "text": "Git push done in the repo , autor: ${{ github.actor }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
