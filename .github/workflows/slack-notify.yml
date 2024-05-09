@@ -12,7 +12,54 @@ jobs:
         with:
           payload: |
             {
-            "text": "Git push done in the repo , autor: ${{ github.actor }}"
+              "text": "Error in main branch.",
+              "blocks": [
+                  {
+                      "type": "section",
+                      "text": {
+                          "type": "mrkdwn",
+                          "text": "An error has been detected in the *main* branch of the repository."
+                      }
+                  },
+                  {
+                      "type": "divider"
+                  },
+                  {
+                      "type": "section",
+                      "text": {
+                          "type": "mrkdwn",
+                          "text": "*Error Details:*"
+                      }
+                  },
+                  {
+                      "type": "section",
+                      "fields": [
+                          {
+                              "type": "mrkdwn",
+                              "text": "*Error Message:*\nThe specific error message that occurred."
+                          },
+                          {
+                              "type": "mrkdwn",
+                              "text": "*Last Commit:*\nThe hash and message of the latest commit on the main branch."
+                          },
+                          {
+                              "type": "mrkdwn",
+                              "text": "*Branch Status:*\nThe current status of the main branch."
+                          }
+                      ]
+                  },
+                  {
+                      "type": "divider"
+                  },
+                  {
+                      "type": "section",
+                      "text": {
+                          "type": "mrkdwn",
+                          "text": "You can review the current state of the repository and take necessary actions to resolve the issue."
+                      }
+                  }
+              ]
             }
+
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
