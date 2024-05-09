@@ -5,11 +5,14 @@ on:
 
 jobs:
   slackNotification:
-    name: Slack Notification
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Slack Notification
-      uses: rtCamp/action-slack-notify@v2
-      env:
-        SLACK_WEBHOOK: https://hooks.slack.com/services/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
+      - name: Send notification on Slack using Webhooks
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          payload: |
+            {
+            "text": "Git push done in the repo , demogithubactionyttest"
+            }
+        env:
+          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
