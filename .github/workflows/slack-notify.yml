@@ -6,12 +6,6 @@ on:
     types: [opened, synchronize]
 
 env:
-  PULL_REQUEST_TITLE: ${{ github.event.pull_request.title }} 
-  PULL_REQUEST_URL: ${{ github.event.pull_request.html_url }}
-  PULL_REQUEST_AUTHOR: ${{ github.event.pull_request.user.login }}
-  PULL_REQUEST_EVENT_NAME: ${{ github.event_name }}
-  PULL_REQUEST_LOGS_URL: ${{ github.event.repository.html_url }}/actions/runs/${{ github.run_id }}
-  PULL_REQUEST_COMMIT_URL: ${{ github.event.pull_request.head.repo.html_url }}/commit/${{ github.event.pull_request.head.sha }}
   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
 jobs:
@@ -20,7 +14,7 @@ jobs:
 
     steps:
       - name: Slack message with build result
-        if: success() || failure()
+        if: failure()
         uses: slackapi/slack-github-action@v1.24.0
         env:
           PULL_REQUEST_JOB_STATUS: ${{ job.status }}
@@ -28,63 +22,52 @@ jobs:
         with:
           payload: |
             {
-              "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
-              "attachments": [
-                {
-                  "color": "${{ env.PULL_REQUEST_JOB_STATUS_COLOR }}",
-                  "fallback": "test",
-                  "blocks": [
-                    {
+              "text": "Error in main branch.",
+              "blocks": [
+                  {
                       "type": "section",
-                      "fields": [
-                        {
+                      "text": {
                           "type": "mrkdwn",
-                          "text": "*Pull Request:*\n<${{ env.PULL_REQUEST_URL }}|${{ env.PULL_REQUEST_TITLE }}>"
-                        },
-                        {
-                          "type": "mrkdwn",
-                          "text": "*Status:*\n`${{ env.PULL_REQUEST_JOB_STATUS }}`"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "section",
-                      "fields": [
-                        {
-                          "type": "mrkdwn",
-                          "text": "*Author:*\n`${{ env.PULL_REQUEST_AUTHOR }}`"
-                        },
-                        {
-                          "type": "mrkdwn",
-                          "text": "*Event:*\n`${{ env.PULL_REQUEST_EVENT_NAME }}`"
-                        }
-                      ]
-                    },
-                    {
+                          "text": "An error has been detected in the *main* branch of the repository."
+                      }
+                  },
+                  {
                       "type": "divider"
-                    },
-                    {
-                      "type": "actions",
-                      "elements": [
-                        {
-                          "type": "button",
-                          "text": {
-                            "type": "plain_text",
-                            "text": "Logs"
+                  },
+                  {
+                      "type": "section",
+                      "text": {
+                          "type": "mrkdwn",
+                          "text": "*Error Details:*"
+                      }
+                  },
+                  {
+                      "type": "section",
+                      "fields": [
+                          {
+                              "type": "mrkdwn",
+                              "text": "*Error Message:*\nThe specific error message that occurred."
                           },
-                          "url": "${{ env.PULL_REQUEST_LOGS_URL }}"
-                        },
-                        {
-                          "type": "button",
-                          "text": {
-                            "type": "plain_text",
-                            "text": "Commit"
+                          {
+                              "type": "mrkdwn",
+                              "text": "*Last Commit:*\nThe hash and message of the latest commit on the main branch."
                           },
-                          "url": "${{ env.PULL_REQUEST_COMMIT_URL }}"
-                        }
+                          {
+                              "type": "mrkdwn",
+                              "text": "*Branch Status:*\nThe current status of the main branch."
+                          }
                       ]
-                    }
-                  ]
-                }
+                  },
+                  {
+                      "type": "divider"
+                  },
+                  {
+                      "type": "section",
+                      "text": {
+                          "type": "mrkdwn",
+                          "text": "You can review the current state of the repository and take necessary actions to resolve the issue."
+                      }
+                  }
               ]
             }
+
