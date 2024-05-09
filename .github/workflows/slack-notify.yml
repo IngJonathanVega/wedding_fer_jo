@@ -10,7 +10,6 @@ jobs:
         with:
           payload: |
             {
-              "text": "Error in main branch.",
               "blocks": [
                   {
                       "type": "section",
