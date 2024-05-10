@@ -16,6 +16,33 @@ jobs:
         id: slack
         uses: slackapi/slack-github-action@v1.26.0
         with:
-          payload: "{\"text\":\"A GitHub Action Event ${{ github.eventName }} has ${{ job.status }}\",\"attachments\":[{\"color\":\"red\",\"fields\":[{\"title\":\"Repository\",\"short\":false,\"value\":\"<${{ github.payload.repository.html_url }}|${{ github.payload.repository.full_name }}>\"},{\"title\":\"Ref\",\"short\":false,\"value\":\"${{ github.ref }}\"},{\"title\":\"Commit\",\"short\":false,\"value\":\"<${{ github.payload.repository.html_url }}/commit/${{ github.sha }}|${{ github.sha }}>\"},{\"title\":\"Author\",\"short\":false,\"value\":\"<https://github.com/${{ github.actor }}|${{ github.actor }}>\"},{\"title\":\"Workflow\",\"short\":false,\"value\":\"<${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|${{ github.workflow }}>\"}]}]}"
+          payload: |
+            {
+              "attachments": [{
+                "color": "red",
+                "fields": [{
+                  "title": "Repository",
+                  "short": false,
+                  "value": "<${{ github.payload.repository.html_url }}|${{ github.payload.repository.full_name }}>"
+                }, {
+                  "title": "Ref",
+                  "short": false,
+                  "value": "${{ github.ref }}"
+                }, {
+                  "title": "Commit",
+                  "short": false,
+                  "value": "<${{ github.payload.repository.html_url }}/commit/${{ github.sha }}|${{ github.sha }}>"
+                }, {
+                  "title": "Author",
+                  "short": false,
+                  "value": "<https://github.com/${{ github.actor }}|${{ github.actor }}>"
+                }, {
+                  "title": "Workflow",
+                  "short": false,
+                  "value": "<${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|${{ github.workflow }}>"
+                }]
+              }],
+              "text": "A GitHub Action Event ${{ github.eventName }} has ${{ job.status }}",
+            }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
