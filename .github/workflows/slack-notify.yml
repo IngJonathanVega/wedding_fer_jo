@@ -8,9 +8,6 @@ on:
   check_run:
     types: [rerequested, completed]
 
-env:
-  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-
 jobs:
   checks:
     runs-on: ubuntu-latest
@@ -22,5 +19,7 @@ jobs:
         with:
           payload: |
             {
-              "text": "Error in main branch.",
-            }
+                "text": "Error in main branch.",
+              }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
