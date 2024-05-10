@@ -26,7 +26,7 @@ jobs:
         run: yarn lint
 
   notify-on-failure:
-    if: ${{ failure() }}
+    if: success()
     needs: build-and-lint
     uses: ./.github/workflows/slack-notify.yml
     secrets: inherit
