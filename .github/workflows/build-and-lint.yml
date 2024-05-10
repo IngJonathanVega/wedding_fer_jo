@@ -27,7 +27,7 @@ jobs:
 
   notify-on-failure:
     runs-on: ubuntu-latest
-    if: ${{ failure() }}
+    if: ${{ success() }}
     needs: build-and-lint
     steps:
         - name: Trigger Slack Notify Workflow
