@@ -26,9 +26,7 @@ jobs:
         run: yarn lint
 
   notify-on-failure:
-    runs-on: ubuntu-latest
-    if: ${{ success() }}
+    if: ${{ failure() }}
     needs: build-and-lint
-    steps:
-        - name: Trigger Slack Notify Workflow
-          uses: ./.github/actions/slack-notification-action.yml
+    uses: ./.github/workflows/slack-notify.yml
+    secrets: inherit
