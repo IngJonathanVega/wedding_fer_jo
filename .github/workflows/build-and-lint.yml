@@ -25,12 +25,5 @@ jobs:
       - name: Linting
         run: yarn lint
 
-      - name: Slack Notificatio
-        run: yarn lint
-
   notify-on-failure:
-    runs-on: ubuntu-latest
-    needs: build-and-lint
-    steps:
-      - name: Trigger Slack Notify Workflow
-        uses: .github/workflows/slack-notify.yml
+    uses: ./.github/workflows/slack-notify.yml
