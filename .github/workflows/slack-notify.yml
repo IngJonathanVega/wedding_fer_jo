@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
       - name: Slack message with build result
         id: slack
         uses: slackapi/slack-github-action@v1.26.0
