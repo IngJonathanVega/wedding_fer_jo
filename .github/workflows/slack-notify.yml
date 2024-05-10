@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Slack message with build result
-        uses: slackapi/slack-github-action@v1.24.0
+        uses: slackapi/slack-github-action@v1.26.0
         with:
           payload-file-path: "./payload-slack-content.json"
           payload-file-path-parsed: false
