@@ -14,9 +14,9 @@ jobs:
         with:
           payload: |
             {
-              "text": "A GitHub Action Event ${{ github.eventName }} has ${{ env.JOB_STATUS }}",
+              "text": "A GitHub Action Event ${{ github.eventName }}",
               "attachments": [{
-                "color": "${{ env.ATTACHMENT_COLOR }}",
+                "color": "red",
                 "fields": [{
                   "title": "Repository",
                   "short": false,
