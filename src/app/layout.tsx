@@ -15,8 +15,6 @@ export const metadata: Metadata = {
   description: 'Wedding for Fernanda & Jonathan',
 };
 
-
-
 const LocaleRootLayout: FC<PropsWithChildren<PageProps>> = async ({ children, params }) => {
   return (
     <html lang={params.locale}>
