@@ -19,7 +19,7 @@ jobs:
         with:
           payload: |
             {
-                "text": "Error in main branch.",
-              }
+                "text": "Error in main branch."
+            }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
