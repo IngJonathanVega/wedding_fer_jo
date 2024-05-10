@@ -10,12 +10,35 @@ jobs:
 
     steps:
       - name: Slack message with build result
-        if: failure() || success()
         uses: slackapi/slack-github-action@v1.24.0
         with:
           payload: |
             {
-                "text": "Error in main branch."
+              "text": "A GitHub Action Event ${{ github.eventName }} has ${{ env.JOB_STATUS }}",
+              "attachments": [{
+                "color": "${{ env.ATTACHMENT_COLOR }}",
+                "fields": [{
+                  "title": "Repository",
+                  "short": false,
+                  "value": "<${{ github.payload.repository.html_url }}|${{ github.payload.repository.full_name }}>"
+                }, {
+                  "title": "Ref",
+                  "short": false,
+                  "value": "${{ github.ref }}"
+                }, {
+                  "title": "Commit",
+                  "short": false,
+                  "value": "<${{ github.payload.repository.html_url }}/commit/${{ github.sha }}|${{ github.sha }}>"
+                }, {
+                  "title": "Author",
+                  "short": false,
+                  "value": "<https://github.com/${{ github.actor }}|${{ github.actor }}>"
+                }, {
+                  "title": "Workflow",
+                  "short": false,
+                  "value": "<${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|${{ github.workflow }}>"
+                }]
+              }]
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
