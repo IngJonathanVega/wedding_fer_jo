@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
     branches:
-      - main 
+      - main
 
 jobs:
   build-and-lint:
@@ -24,3 +24,17 @@ jobs:
 
       - name: Linting
         run: yarn lint
+
+      - name: Slack Notificatio
+        run: yarn lint
+
+  notify-on-failure:
+    runs-on: ubuntu-latest
+    needs: build-and-lint
+    steps:
+      - name: Trigger Slack Notify Workflow
+        uses: actions/workflow-caller@v1
+        with:
+          workflow: 'slack-notify.yml'
+          repository: ${{ github.repository }}
+          branch: 'main'

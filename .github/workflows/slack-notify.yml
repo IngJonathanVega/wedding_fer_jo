@@ -1,6 +1,7 @@
 name: Slack Notification
 
 on:
+  workflow_call:
   workflow_dispatch:
   pull_request:
     types: [opened, synchronize]
@@ -18,58 +19,8 @@ jobs:
       - name: Slack message with build result
         if: failure() || success()
         uses: slackapi/slack-github-action@v1.24.0
-        env:
-          PULL_REQUEST_JOB_STATUS: ${{ job.status }}
-          PULL_REQUEST_JOB_STATUS_COLOR: ${{ job.status == 'success' && vars.COLOR_GREEN || job.status == 'failure' && vars.COLOR_RED || vars.COLOR_ORANGE }}
         with:
           payload: |
             {
               "text": "Error in main branch.",
-              "blocks": [
-                  {
-                      "type": "section",
-                      "text": {
-                          "type": "mrkdwn",
-                          "text": "An error has been detected in the *main* branch of the repository."
-                      }
-                  },
-                  {
-                      "type": "divider"
-                  },
-                  {
-                      "type": "section",
-                      "text": {
-                          "type": "mrkdwn",
-                          "text": "*Error Details:*"
-                      }
-                  },
-                  {
-                      "type": "section",
-                      "fields": [
-                          {
-                              "type": "mrkdwn",
-                              "text": "*Error Message:*\nThe specific error message that occurred."
-                          },
-                          {
-                              "type": "mrkdwn",
-                              "text": "*Last Commit:*\nThe hash and message of the latest commit on the main branch."
-                          },
-                          {
-                              "type": "mrkdwn",
-                              "text": "*Branch Status:*\nThe current status of the main branch."
-                          }
-                      ]
-                  },
-                  {
-                      "type": "divider"
-                  },
-                  {
-                      "type": "section",
-                      "text": {
-                          "type": "mrkdwn",
-                          "text": "You can review the current state of the repository and take necessary actions to resolve the issue."
-                      }
-                  }
-              ]
             }
-
