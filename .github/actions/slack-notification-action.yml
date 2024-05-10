@@ -1,0 +1,19 @@
+name: Slack Notification
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize]
+  check_run:
+    types: [rerequested, completed]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Slack message with build result
+        if: failure() || success()
+        run: |
+          bash .github/actions/slack-notification-action.sh

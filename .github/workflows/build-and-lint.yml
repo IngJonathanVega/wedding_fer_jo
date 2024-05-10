@@ -31,4 +31,4 @@ jobs:
     needs: build-and-lint
     steps:
         - name: Trigger Slack Notify Workflow
-          uses: ./.github/workflows/slack-notify.yml
+          uses: ./.github/actions/slack-notification-action.yml
