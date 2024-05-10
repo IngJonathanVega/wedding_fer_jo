@@ -11,11 +11,12 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+
       - name: Slack message with build result
         id: slack
         uses: slackapi/slack-github-action@v1.26.0
         with:
-          payload-file-path: "./payload-slack-content.json"
+          payload-file-path: "${{ github.workspace }}/.github/resources/payload-slack-content.json"
           payload-file-path-parsed: false
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
